@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Oswald|Roboto:200");
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,400|Roboto:200");
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -8232,6 +8232,34 @@ button.close {
   padding-right: 0; }
 .brand-header img {
   width: 100%; }
+
+.footer {
+  font-family: "Oswald", sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: #c57946; }
+  .footer p {
+    font-weight: 200;
+    letter-spacing: .05em; }
+  .footer .footer-left {
+    text-align: left; }
+    @media (max-width: 768px) {
+      .footer .footer-left {
+        text-align: center; } }
+  .footer .footer-right {
+    text-align: right; }
+    @media (max-width: 768px) {
+      .footer .footer-right {
+        text-align: center; } }
+
+.text-light {
+  color: #eceaed; }
+
+.text-med {
+  color: #c5ab9e; }
+
+.text-dark {
+  color: #2b2b2b; }
 
 h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
   color: #c5ab9e; }

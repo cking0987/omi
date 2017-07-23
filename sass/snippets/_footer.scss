@@ -1,0 +1,22 @@
+.footer {
+  font-family: $font-family-headings;
+  font-size: .8em;
+  text-transform: uppercase;
+  color: $brand-primary;
+  p {
+    font-weight: 200;
+    letter-spacing: .05em;
+  }
+  .footer-left {
+    @media (max-width: $screen-sm) {
+      text-align: center;
+      }
+    text-align:left;
+  }
+  .footer-right {
+    @media (max-width: $screen-sm) {
+      text-align: center;
+      }
+    text-align:right;
+  }
+}

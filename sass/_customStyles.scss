@@ -1,6 +1,19 @@
 @import "snippets/instafeed";
 @import "snippets/jumbotron";
 @import "snippets/header";
+@import "snippets/footer";
+//
+/// general typography
+.text-light {
+  color: $brand-color-4;
+}
+.text-med {
+  color: $brand-color-2;
+}
+.text-dark {
+  color: $brand-color-dark;
+}
+
 //
 /// headings
 h1, h2, h3, h4, h5, h6 {
