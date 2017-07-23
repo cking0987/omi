@@ -8188,6 +8188,10 @@ button.close {
     text-align: justify;
     font-weight: 300; }
 
+html {
+  height: 100vh;
+  min-height: 100%; }
+
 .jumbotron {
   background-size: cover;
   background-attachment: fixed;
