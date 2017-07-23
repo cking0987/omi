@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Old Moulton Industries</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="container brand-header">
+  <div class="row no-gutter">
+    <div class="col col-xs-8 col-sm-3">
+      <img src="img/header-logo-1.png" alt="" />
+    </div>
+    <div class="col col-xs-4 col-sm-2">
+      <img src="img/header-logo-2.png" id="industries-logo-img" alt="" />
+    </div>
+    <div class="col col-sm-7 text-right">
+      <ul class="social-link-list" id="social-link-list">
+        <li><a href="mailto:cking@oldmoultonindustries.com" target="_blank">
+        <i class="fa fa-envelope-open-o" aria-hidden="true"></i></a></li>
+        <li><a href="http://instagram.com/oldmoultonindustries" target="_blank">
+          <i class="fa fa-instagram"></i></a></li>
+        <li><a href="http://linkedin.com/in/charles-king-a26a0626/" target="_blank">
+          <i class="fa fa-etsy" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fullscreen" style="background-image: url(img/tractor.jpg)">
+    <div class="screen-center col-md-8">
+    <h1>I build things.</h1>
+    <p class="lead">If you need help building something, I can build for you.<br />Otherwise, I build whatever comes to my mind and put it up here for sale. <br /> Scroll down to see some of my work or cut right to the chase and <a href="mailto:cking@oldmoultonindustries.com">email me</a>.</p>
+    </div>
+</div>
+
+<div class="container section-bottom-padded">
+  <div class="row">
+    <div class="col-md-12 text-right">
+      <a href="http://instagram.com/oldmoultonindustries">
+        <h1 class="light kevin-spacey shrinkable"><i class="fa fa-instagram"></i>OLDMOULTONINDUSTRIES</h1>
+      </a>
+    </div>
+  </div>
+  <div class="row">
+    <div id="instafeed"></div>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fullscreen" style="background-image: url(img/treeroad.jpg)">
+    <div class="screen-center col-md-8">
+    <h1>Commitment to Sustainability.</h1>
+    <p class="lead">Every action carries an impact. In every project and at every desicion, I try to be mindful of the corresponding environmental impact of various decisions. Whenever possible, I adhere to the <a href="http://www.c2ccertified.org/about">Cradle to Cradle</a> design philosophy.</p>
+    </div>
+</div>
+
+
+      <script src="bower_components/jquery/dist/jquery.js"></script>
+      <script src="bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+      <script src="bower_components/instafeed.js/instafeed.min.js"></script>
+      <script>
+        var feed = new Instafeed({
+          get: 'user',
+          userId: 5766198337,
+          accessToken: '5766198337.e6c3066.5c7e1e85aa6c4347a506a44226493072',
+          resolution: 'standard_resolution',
+          limit: 6,
+          template: '<div class="col-sm-4"><a href="#" class="modal-toggle" data-toggle="modal" data-target="#instafeed-modal-{{id}}"><img src="{{image}}" /><div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div></a></div><div class="modal fade" id="instafeed-modal-{{id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-body"><img src="{{image}}" /></div><div class="modal-footer"><p>{{caption}}</p><a href="#" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></a><a href="{{link}}" target="_blank" class="close"><i class="fa fa-instagram"></i></a></div></div></div></div>',
+        });
+        feed.run();
+      </script>
+      <script src="js/scripts.js"></script>
+</body>
+</html>

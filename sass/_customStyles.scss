@@ -1,0 +1,35 @@
+@import "snippets/instafeed";
+@import "snippets/jumbotron";
+@import "snippets/header";
+//
+/// headings
+h1, h2, h3, h4, h5, h6 {
+  &.light {
+    color: $headings-color-light;
+  }
+  &.dark {
+    color: $headings-color-dark;
+  }
+  &.kevin-spacey {
+    letter-spacing: .2em;
+  }
+  &.breakable {
+    word-break: break-all;
+  }
+  &.shrinkable {
+    @media only screen and (max-width: 350px) {
+      font-size: 16px;
+    }
+    @media only screen and (min-width: 351px) and (max-width: 480px) {
+      font-size: 20px;
+    }
+    @media only screen and (min-width: 481px) and (max-width: 600px) {
+      font-size: 28px;
+    }
+  }
+}
+//
+/// sections
+.section-bottom-padded {
+  padding-bottom: 2*$grid-gutter-width;
+}

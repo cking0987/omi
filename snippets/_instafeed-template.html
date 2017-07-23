@@ -1,0 +1,24 @@
+<div class="col-sm-4">
+  <a href="#" data-toggle="modal" class="modal-toggle" data-target="#instafeed-modal-{{id}}">
+    <img src="{{image}}" />
+    <div class="overlay"><i class="fa fa-search-plus" aria-hidden="true"></i></div>
+  </a>
+</div>
+<div class="modal fade" id="instafeed-modal-{{id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="{{image}}" />
+      </div>
+      <div class="modal-footer">
+        <p>{{caption}}</p>
+        <a href="#" class="close" data-dismiss="modal" aria-label="Close">
+          <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <a href="{{link}}" target="_blank">
+          <i class="fa fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

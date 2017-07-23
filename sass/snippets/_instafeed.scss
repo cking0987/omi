@@ -1,0 +1,81 @@
+#instafeed {
+  .col-sm-4 {
+    padding: 10px;
+  }
+  a:focus {
+    outline: 0;
+  }
+  div {
+    border: 0;
+    padding: 0;
+  }
+  img {
+    box-shadow: 8px 8px 25px -5px black;
+    width: 100%;
+    border: 0;
+  }
+  .overlay {
+    display: none;
+  }
+  @media (hover:hover) {
+    .modal-toggle img {
+      transition: .3s ease;
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        font-size: 40px;
+        color: white;
+      }
+    }
+    .modal-toggle:hover {
+      img {
+        opacity: .3;
+      }
+      .overlay {
+        display: block;
+      }
+    }
+  }
+
+  .modal {
+    .modal-content {
+      background-color: rgba($brand-color-dark, .75);
+      padding: 0;
+      border-radius: 0;
+    }
+    .modal-footer {
+      padding: 10px;
+
+      font-face: lato;
+      a, p {
+        color: #d9edf7;
+        padding: 5px;
+      }
+      a {
+        font-size: 20px;
+        float: right;
+        text-shadow: none;
+        opacity: 1;
+        &:hover {
+          opacity: .2;
+        }
+      }
+      p {
+        font-family: lato, monospace;
+        letter-spacing: .1em;
+        font-size: .9em;
+        width: 90%;
+        float: left;
+        text-align: justify;
+        font-weight: 300;
+      }
+    }
+  }
+}
