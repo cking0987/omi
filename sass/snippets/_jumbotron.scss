@@ -1,8 +1,12 @@
-html {
-  height: 100vh;
-  min-height: 100%;
-}
+
 .jumbotron {
+  background-size: cover;
+  @media (max-width: $screen-xs) {
+    background-attachment: scroll;
+    }
+  background-attachment: fixed;
+  background-position: center;
+  box-shadow: 0px 0px 25px 1px black;
   a {
     font-weight: 400;
     color: lighten($brand-color-dark, 10%);
@@ -11,10 +15,6 @@ html {
       background-color: rgba(white, .4);
     }
   }
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-  box-shadow: 0px 0px 25px 1px black;
   p {
     font-family: $font-family-base;
     font-weight: 200;
